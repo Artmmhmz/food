@@ -1,0 +1,126 @@
+// до 1200px
+// до 992px
+// до 768px
+// до 576px
+// от 320px до 480px
+
+
+@media (max-width: 1366px)
+    .container
+        max-width: 960px
+    .rating
+        &__price, &__category
+            font-size: 14px
+        &__category
+            text-overflow: ellipsis
+            overflow: hidden
+            white-space: nowrap
+            max-width: 150px
+        &__points
+            margin-right: 12px
+
+@media (max-width: 992px)
+    .container
+        max-width: 750px
+    .promo
+        &__wrapper
+            padding: 50px
+            background-size: cover
+            background-position: center right -300px
+        &__subtitle
+            font-size: 18px
+            max-width: 400px
+    .card
+        flex-basis: 49%
+    .footer
+        &__link
+            font-size: 14px
+
+@media (max-width: 768px)
+    .container
+        max-width: 560px
+    .card
+        &__info
+            flex-wrap: wrap
+        &__title
+            font-size: 18px
+    .rating
+        &__points
+            flex-basis: 100%
+    .promo
+        &__title
+            font-size: 24px
+            line-height: 1.4
+            margin-bottom: 15px
+        &__wrapper
+            background-size: cover
+        &_subtitle
+            margin-top: 0
+            
+@media (max-width: 578px)
+    .container
+        width: 90%
+    .header
+        &-wrapper
+            flex-wrap: wrap
+            
+    .search-address
+        flex-grow: 1
+        margin-top: 15px
+        order: 5
+    .promo
+        &__wrapper
+            background-image: none
+        &__title
+            margin-bottom: 10px
+    .restaurants
+        &__title
+            font-size: 20px
+    .card
+        flex-basis: 100%
+        &-image
+            width: 100%
+    .footer
+        padding: 30px 0
+        &__block
+            align-items: flex-start
+        &__nav
+            margin-left: 0
+            order: 0
+            margin-right: 0
+            display: flex
+            flex-direction: column
+        &__logo
+            order: 1
+            margin-right: 20px
+    .social-links
+        order: 2
+
+@media (max-width: 480px)
+    .button
+        min-height: 40px
+        &-text
+            display: none
+        &-icon
+            margin: 0
+    .promo
+        &__wrapper
+            padding: 20px
+    .restaurants
+        &__header
+            flex-wrap: wrap
+    .footer
+        &__block
+            flex-wrap: wrap
+            flex-direction: column
+            align-items: center
+        &__logo
+            order: 0
+            margin-bottom: 20px
+        &__nav
+            margin-bottom: 20px
+            text-align: center
+        &__link
+            &:not(:last-child)
+                margin-right: 0
+                
